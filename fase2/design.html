@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+	<header>
+		<h1>Etiquetas semánticas, Listas y enlaces</h1>
+	</header>
+	<nav class="navegacion">
+		<ul class="menu">
+			<li><a href="#">Inicio</a></li>
+		  <li><a href="#">Temas</a>
+				<ul class="submenu">
+					<li><a href="#">Tema #1</a></li>
+					<li><a href="#">Tema #2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Recursos Digitales</a>
+				<ul class="submenu">
+					<li><a href="#">Recurso #1</a></li>
+					<li><a href="#">Recurso #2</a></li>
+				</ul>
+			</li>
+	<li><a href="#">Aprendizaje</a>
+				<ul class="submenu">
+					<li><a href="#">Actividad #1</a></li>
+					<li><a href="#">Actividad #2</a></li>
+				</ul>
+			</li>
+		  <li><a href="#">Acerca de</a>
+				<ul class="submenu">
+					<li><a href="#">Autor</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<hr>
+	<section><br>
+		<h3>Propósito:</h3><br>
+		<p>El proposito de este sitio es promover el aprendizaje virtual de temas relacionados con iseño web, particularmente uno llamado "Etiquetas semánticas, Listas y
+			enlaces" uilizando lenguaje sencillo y herramientas tales como los Objetos Virtuales de aprendizaje</p><br>
+	<hr><br>
+	<article>
+		<h4>Etiquetas semánticas</h4>
+		<img src="img/eti_semanticas.png">
+		<p><b>Definición:</b> las etiquetas semánticas son aquellas que nos ayudan a definir la restructira del documento y se califican como tal si nos informan sobre lo que trata su contenido<br> Entre las etiquetas mas usadas tenemos:<br><br></p>
+		<table>
+			<thead>
+			<tr>
+			<th>Etiqueta</th>
+			<th>Descripción</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>&lt;header&gt;</td>
+			<td>Se usa para definir los elementos que son la introducción o navegacion de un documento, el indice de una sección, formularios de busqueda, etc</td>
+			</tr>
+			<tr>
+				<tr>
+					<td>&lt;hgroup&gt;</td>
+					<td>Se usa para agrupar un conjunto de uno o mas elementos de encabezado</td>
+					</tr>
+					<tr>
+			<td>&lt;nav&gt;</td>
+			<td>Se usa para marcar una sección del documento cuya función es la navegación por la página web, es básicamente una sección con links de navegación.</td>
+			</tr>
+			<tr>
+			<td>&lt;aside&gt;</td>
+			<td>Se usa para marcar una parte del contenido que estárelacionado con el contenido de la página, pero no es parte de la misma, por ejemplo un glosario, grupos de enlaces a paginas relacionadas, etc</td>
+			</tr>
+			<tr>
+			<td>&lt;main&gt;</td>
+			<td>Representa el contenido predominante de la página.<br>Una página debe tener solo un tag <code>&lt;main&gt;</code>.<br>Solo debe estar contenida por tags de tipo <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;div&gt;</code> o <code>&lt;form&gt;</code>.</td>
+			</tr>
+			<tr>
+			<td>&lt;article&gt;</td>
+			<td>Representa una sección de contenido que puede ser distribuido de forma independiente. Algunos ejemplos pueden ser un post en un foro, un articulo de periódico, una entrada de un blog, un comentario, etc.</td>
+			</tr>
+			<tr>
+			<td>&lt;section&gt;</td>
+			<td>Representa a una sección genérica de una pagina. Agrupa contenidos que tienen una relación temática entre si. Algunos ejemplos pueden ser capitulo, pestañas de un menu, lista de noticias, etc</td>
+			</tr>
+			<tr>
+			<td>&lt;footer&gt;</td>
+			<td>Representa un pie de página para el elemento que lo contiene.<br>Generalmente contiene información sobre el autor, licencia, términos de uso etc.</td>
+			</tr>
+			</tbody>
+			</table>
+			<br><hr><br>
+		<h4>Listas</h4><br>
+<img src="img/listas.gif"><br><br>
+<p><b>Definición:</b> las listas en HTML permiten crear conjuntos de elemtnos en forma de listas y generalmente precedidos de un guión o un número<br> Existen varios tipos de listas:<br><br>
+<b>Listas ordenadas:</b> Son quellas que muestran los elementos de una lista en orden, generalmente precedidos de un numero o letra que cumplen con esta regla. Se representan mediante la etiqueta <b>OL</b> (&lt;ol&gt;....&lt;/ol&gt;), por ejemplo:<br>
+<ol>
+	<li>Enero</li>
+	<li>Febrero</li>
+	<li>Marzo</li>
+	<li>Abril</li>
+  </ol>
+<br>
+<b>Listas desordenadas:</b> Como su nombre lo indica, son aquellas que muestran los elementos de una lista sin ningun tipo de orden, y la viñeta en este caso es un punto, un cuadrado, etc. Se representan mediante la etiqueta <b>UL</b> (&lt;ul&gt;....&lt;/ul&gt;), por ejemplo:<br>
+<ul class="unlisted">
+	<li>Enero</li>
+	<li>Febrero</li>
+	<li>Marzo</li>
+	<li>Abril</li>
+  </ul>
+  <br>
+<b>Listas de Definiciones:</b> Se usan principalmente para mostrar información de la cual tenemos un valor y una definición. Se representan mediante la etiqueta <b>dl</b> (&lt;dl&gt;....&lt;/dl&gt;). Por defecto los navegadores dejan el término y en la siguiente líne, junto con un tabulador, la definición. Por ejemplo:<br>
+<dl>
+  <dt>Sitio Web</dt>
+  <dd>Un sitio web es un conjunto de archivos electrónicos y páginas web referentes a un tema en particular, incluyendo una página inicial de bienvenida generalmente denominada página de inicio o home page, a los cuales se puede acceder a través de un nombre de dominio y dirección en Internet específicos</dd>
+  <dt>DNS</dt>
+  <dd>El DNS (Domain Name System, Sistema de Nombres de Dominio) es un conjunto de protocolos y servicios que permite a los usuarios utilizar nombres en vez de tener que recordar direcciones IP numéricas.</dd>
+  <dt>DHCP</dt>
+  <dd>El DHCP no es más que un protocolo de tipo servidor/cliente que permite asignar de manera automática una dirección IP y configurar otros aspectos de la conexión para que esta pueda comunicarse con otras IP's.</dd>
+</dl>
+<br>
+</p>
+<hr>
+<h4>Referencias</h4>
+<ul class="unlisted">
+	<li>Arumeinformatica.es. 2021. HTML5: Nuevas etiquetas semánticas y estructurales - Arume. [online] Disponible en: <a href="https://www.arumeinformatica.es/blog/html5-nuevas-etiquetas-semanticas-y-estructurales/2">https://www.arumeinformatica.es/blog/html5-nuevas-etiquetas-semanticas-y-estructurales/2</a> [Consultado el 28 de Junio de 2021].</li>
+	<li>Desarrolloweb.com. 2021. Etiquetas semánticas del HTML5. [online] Disponible en: <a href="https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html">https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html</a> [Consultado el 28 de Junio de 2021].</li>
+	<li>DEV Community. 2021. Etiquetas semánticas de HTML5. [online] Disponible en: <a href="https://dev.to/sapardo/etiquetas-semanticas-de-html5-3j7m">https://dev.to/sapardo/etiquetas-semanticas-de-html5-3j7m</a>  [Consultado el 28 de Junio de 2021].</li>
+	</ul>
+	</article>
+</section>
+<hr>
+<footer>
+	<br><p>Correo del autor: jeonoaa@unadvirtual.edu.co<br>Skype: julian.onoa<br>Fecha de actualización: Junio 27 de 2021</p>
+</footer>
+</body>
+</html>
